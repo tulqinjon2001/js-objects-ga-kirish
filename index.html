@@ -23,9 +23,23 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
 </head>
-<body class="container">
+<body class="container"> 
+  <div style="height: 180px;" class="password-box bg-info p-3 m-3 rounded-3"> <!-- Create passwords div -->
+    <form class="password-form" method="post">
+      <label class="password-label font-monospace" for="passwordInput">Enter your password:</label>
+
+      <input class="password-input w-75 p-2 font-monospace my-2" type="number" id="passwordInput" required autocomplete="off">
+
+      <button class="btn bg-danger font-monospace" type="submit">Check</button>
+    </form>
+
+    <output style="height: 40px;" class="password-output font-monospace w-75 mt-4"></output>
+  </div>
+
+  <!-- Person informations -->
   <div style="min-height: 100vh;" class="person-data bg-light p-4 row">
     <form class="form border border-5 border-dark col-6 rounded-4 p-5">
       <div class="mb-3">
@@ -52,7 +66,7 @@
         <input class="phone-input form-control w-50" type="number" id="phoneNumber" required autocomplete="off" placeholder="+998990101010">
       </div>
       
-      <button class="btn btn-primary" type="submit">Submit</button>
+      <submit class="btn btn-primary" type="submit">Add</submit>
     </form>
 
     <output class="output col-6 bg-warning border border-5 border-dark rounded-4 border-start-0 p-5">

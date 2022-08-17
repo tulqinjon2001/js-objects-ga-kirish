@@ -1,3 +1,43 @@
+// First homework
+let elPasswordForm = document.querySelector('.password-form');
+let elPasswordInput = elPasswordForm.querySelector('.password-input');
+
+let elPasswordOutput = document.querySelector('.password-output');
+
+let passwordArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let pass = false;
+
+elPasswordForm.addEventListener("submit", function(evt) {
+  evt.preventDefault();
+
+  let passwordInput = elPasswordInput.value;
+  let passwordOutput = elPasswordOutput;
+
+  for(let i = 0; i < passwordArray.length; i++) {
+    if (passwordInput == passwordArray[i]) {
+      passwordOutput.textContent = "Xush kelibsiz";
+      pass = true;
+      break;
+    }
+
+    if (pass) {
+      break;
+    }
+  }
+
+  if (!pass) {
+    passwordOutput.textContent = "Parolingiz noto'g'ri";
+  }
+
+  elPasswordInput.value = " ";
+});
+
+
+
+
+
+
+
 let elForm = document.querySelector('.form');
 let elInputFirstName = elForm.querySelector('.firstname-input');
 let elInputlastName = elForm.querySelector('.lastname-input');

@@ -1,0 +1,10 @@
+/* input[type = "submit"] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+input:not(:placeholder-shown) +
+          input[type = "submit"] 
+{
+  opacity: 1;
+} */
