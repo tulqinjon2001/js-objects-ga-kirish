@@ -29,14 +29,10 @@ elPasswordForm.addEventListener("submit", function(evt) {
     passwordOutput.textContent = "Parolingiz noto'g'ri";
   }
 
-  elPasswordInput.value = " ";
+  elPasswordInput.value = "";
 });
 
-
-
-
-
-
+// Second homework
 
 let elForm = document.querySelector('.form');
 let elInputFirstName = elForm.querySelector('.firstname-input');
