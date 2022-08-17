@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person Information</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+</head>
+<body class="container">
+  <div style="min-height: 100vh;" class="person-data bg-light p-4 row">
+    <form class="form border border-5 border-dark col-6 rounded-4 p-5">
+      <div class="mb-3">
+        <label class="form-label" for="firstname">Firstname:</label>
+
+        <input class="firstname-input form-control w-50" type="text" id="firstname" required autocomplete="off" placeholder="Igor">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="lastname">Lastname:</label>
+
+        <input class="lastname-input form-control w-50" type="text" id="lastname" required autocomplete="off" placeholder="Sergeyev">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="age">Age:</label>
+
+        <input class="age-input form-control w-50" type="number" id="age" required autocomplete="off" placeholder="27">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="phoneNumber">Phone-number:</label>
+
+        <input class="phone-input form-control w-50" type="number" id="phoneNumber" required autocomplete="off" placeholder="+998990101010">
+      </div>
+      
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+    <output class="output col-6 bg-warning border border-5 border-dark rounded-4 border-start-0 p-5">
+      <ul class="out-list list-unstyled"></ul>
+    </output>
+  </div>
+
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
